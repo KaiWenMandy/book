@@ -1,24 +1,1197 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="SPH-bh-dHU">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="crayon_1-1.ttf">
+            <string>Nagurigaki-Crayon</string>
+        </array>
+    </customFonts>
     <scenes>
-        <!--View Controller-->
+        <!--主畫面-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="主畫面" id="BYZ-38-t0r" customClass="ViewController" customModule="book" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Title" translatesAutoresizingMaskIntoConstraints="NO" id="QIf-3x-IqU">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="三毛別" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8UO-Ko-vGW">
+                                <rect key="frame" x="33" y="492" width="166" height="73"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Nagurigaki-Crayon" family="Nagurigaki Crayon" pointSize="50"/>
+                                <color key="textColor" red="0.85536755180000001" green="0.1211754375" blue="0.00120936054" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="熊" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PXw-Ly-YIw">
+                                <rect key="frame" x="207" y="428" width="200" height="200"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Nagurigaki-Crayon" family="Nagurigaki Crayon" pointSize="200"/>
+                                <color key="textColor" red="0.85536755180000001" green="0.1211754375" blue="0.00120936054" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="人事件" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rMv-zH-MUj">
+                                <rect key="frame" x="124" y="667" width="270" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Nagurigaki-Crayon" family="Nagurigaki Crayon" pointSize="90"/>
+                                <color key="textColor" red="0.85536755180000001" green="0.1211754375" blue="0.00120936054" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="殺" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HBo-n0-dS8">
+                                <rect key="frame" x="20" y="589" width="130" height="130"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Nagurigaki-Crayon" family="Nagurigaki Crayon" pointSize="130"/>
+                                <color key="textColor" red="0.85536755180000001" green="0.1211754375" blue="0.00120936054" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="の" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bsa-bN-Ufk">
+                                <rect key="frame" x="158" y="573" width="47" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Nagurigaki-Crayon" family="Nagurigaki Crayon" pointSize="70"/>
+                                <color key="textColor" red="0.85536755180000001" green="0.1211754375" blue="0.00120936054" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.13370094020000001" blue="0.21960784310000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="jYi-S6-wsW">
+                        <barButtonItem key="backBarButtonItem" title="主畫面" id="xJ2-Mv-emn"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="3372.4637681159425" y="101.78571428571428"/>
+        </scene>
+        <!--地點-->
+        <scene sceneID="bzd-Pi-cm0">
+            <objects>
+                <viewController id="1LA-Kg-cNC" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rTp-qa-mDN">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BloodTree" translatesAutoresizingMaskIntoConstraints="NO" id="Pqc-mR-hOm">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gJz-S1-8x9">
+                                <rect key="frame" x="20" y="88" width="374" height="725"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GZm-vz-WxP">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="2200"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="慘案的發生地，在日本北海道苫前町三毛別村。這是一個北海道西邊的山地小村，圖為當時的案發地茅屋復原，村民在當時被稱為「開拓民」。" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="01F-6l-wSp">
+                                                <rect key="frame" x="0.0" y="260" width="374" height="233"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="textColor" red="0.21960784310000001" green="0.01176470588" blue="0.023529411760000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="這是茅屋內的復原場景。" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="GcH-lE-jYa">
+                                                <rect key="frame" x="0.0" y="717" width="374" height="54"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="textColor" red="0.21960784310000001" green="0.01176470588" blue="0.023529411760000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="這是茅屋外的復原場景。" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="YuF-Wn-YsS">
+                                                <rect key="frame" x="0.0" y="995" width="374" height="54"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="textColor" red="0.21960784310000001" green="0.01176470588" blue="0.023529411760000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="當事熊的模型。" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="M5q-FP-1Dg">
+                                                <rect key="frame" x="0.0" y="1273" width="374" height="54"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="textColor" red="0.21960784310000001" green="0.01176470588" blue="0.023529411760000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="直到今天，日本人對這起恐怖、曲折的事件，還是念念不忘，三毛別村成了北海道的一處旅遊景點。" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="IwQ-wy-WBa">
+                                                <rect key="frame" x="0.0" y="1551" width="374" height="161"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="textColor" red="0.21960784310000001" green="0.01176470588" blue="0.023529411760000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Location1" translatesAutoresizingMaskIntoConstraints="NO" id="KnI-ye-7pJ">
+                                                <rect key="frame" x="16" y="44" width="342" height="208"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Location4" translatesAutoresizingMaskIntoConstraints="NO" id="iaH-gu-gg7">
+                                                <rect key="frame" x="16" y="1057" width="342" height="208"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Location5" translatesAutoresizingMaskIntoConstraints="NO" id="rTs-Br-8Qa">
+                                                <rect key="frame" x="16" y="1335" width="342" height="208"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Location3" translatesAutoresizingMaskIntoConstraints="NO" id="THI-Pb-O6B">
+                                                <rect key="frame" x="16" y="779" width="342" height="208"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Location2" translatesAutoresizingMaskIntoConstraints="NO" id="iGY-jJ-lXw">
+                                                <rect key="frame" x="16" y="501" width="342" height="208"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Location7" translatesAutoresizingMaskIntoConstraints="NO" id="5Sr-Nw-zIV">
+                                                <rect key="frame" x="16" y="1958" width="342" height="208"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Location6" translatesAutoresizingMaskIntoConstraints="NO" id="l4X-az-6rw">
+                                                <rect key="frame" x="16" y="1720" width="342" height="208"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <viewLayoutGuide key="safeArea" id="gVo-xf-74m"/>
+                                    </view>
+                                </subviews>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="contentSize">
+                                        <size key="value" width="0.0" height="2200"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.88235294119999996" green="0.89019607840000003" blue="0.90196078430000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" red="0.88235294117647056" green="0.8901960784313725" blue="0.90196078431372551" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="gXb-Jz-4Hl"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="地點" id="cpb-Zd-2Xg"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Syj-wC-YRB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5130" y="785"/>
+        </scene>
+        <!--小說-->
+        <scene sceneID="5dq-Xx-IcY">
+            <objects>
+                <viewController id="RWI-sl-fHX" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="l7i-OU-uSZ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BearBackground" translatesAutoresizingMaskIntoConstraints="NO" id="zln-49-njv">
+                                <rect key="frame" x="0.0" y="0.0" width="484" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Novel" translatesAutoresizingMaskIntoConstraints="NO" id="6pw-L4-fTq">
+                                <rect key="frame" x="20" y="115" width="374" height="434"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="nF3-oQ-zYg">
+                                <rect key="frame" x="20" y="557" width="374" height="231"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">慟哭の谷
+北海道三毛別・史上最悪のヒグマ襲撃事件
+作者：木村盛武
+出版社：文藝春秋
+發售日期：2015/4/10</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="TJn-36-14a"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="小說" id="ay0-LB-eCr"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ixw-GD-94u" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6068" y="785"/>
+        </scene>
+        <!--漫畫-->
+        <scene sceneID="M7K-wr-w8T">
+            <objects>
+                <viewController id="6Q6-h5-eSw" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="e1Q-BM-5ST">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BearBackground" translatesAutoresizingMaskIntoConstraints="NO" id="8zt-kc-fb8">
+                                <rect key="frame" x="0.0" y="0.0" width="484" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Comic" translatesAutoresizingMaskIntoConstraints="NO" id="5NB-rA-sax">
+                                <rect key="frame" x="20" y="115" width="374" height="434"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ccp-q3-s4w">
+                                <rect key="frame" x="20" y="557" width="374" height="231"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">野性伝説
+羆風・飴色角と三本指
+作者：戸川幸夫
+畫者：矢口高雄
+出版社：山と渓谷社
+發售日期：2018/6/2</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="foq-X1-gQo"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="漫畫" id="Ib8-IK-uBs"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1eY-rZ-5Ys" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6065" y="1474"/>
+        </scene>
+        <!--池田家騷動-->
+        <scene sceneID="gQo-tP-3CC">
+            <objects>
+                <viewController id="e6g-KI-IEn" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="m4G-ag-EZM">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="725"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="StoryBackground" translatesAutoresizingMaskIntoConstraints="NO" id="bQu-iJ-XcL">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="IyO-UP-3pZ">
+                                <rect key="frame" x="20" y="88" width="374" height="725"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">       1915年（大正4年）11月上旬，巨大棕熊進入池田家，因為驚動了農用馬而被發現，後逃走。
+       11月20日，棕熊再度出現，池田家主人池田富藏（いけだ とみぞう）請來鄰村的兩位又鬼谷喜八 (たに きはち)と金子富蔵 (かねこ とみぞう)，三人埋伏多日但一無所獲。
+       30日，棕熊第三次出現，並留下了爪痕；當晚，長男富吉(とみきち)與妻留守家中、次男亀次郎（かめじろう 當時18歳）與3名村民，4人向鬼鹿山方向追蹤棕熊，並無所獲。</string>
+                                <color key="textColor" red="0.21960784310000001" green="0.01176470588" blue="0.023529411760000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.5" green="0.070832379155534198" blue="0.00070692448940801178" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="WuW-NP-dwy"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="池田家騷動" id="LoR-Rp-ePq"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="C3c-dM-gGh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2462" y="2155"/>
+        </scene>
+        <!--相關影視-->
+        <scene sceneID="HWd-Dq-qEp">
+            <objects>
+                <viewController id="8iC-wB-ZbS" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CXP-mZ-VRT">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BearBackground" translatesAutoresizingMaskIntoConstraints="NO" id="Aaf-Vh-cYy">
+                                <rect key="frame" x="0.0" y="0.0" width="484" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r5a-vG-n8H">
+                                <rect key="frame" x="186" y="558" width="208" height="85"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="小說" backgroundImage="Button">
+                                    <color key="titleColor" red="0.0048598507420000003" green="0.096086271109999996" blue="0.57499289509999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="RWI-sl-fHX" kind="show" id="fEA-rq-3r4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cEU-ks-Bkh">
+                                <rect key="frame" x="186" y="666" width="208" height="85"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="漫畫" backgroundImage="Button">
+                                    <color key="titleColor" red="0.0048598507420000003" green="0.096086271109999996" blue="0.57499289509999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="6Q6-h5-eSw" kind="show" id="EF2-oq-bye"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.76328257709552394" blue="0.67686322140859545" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="Sjs-eO-hqB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="相關影視" id="wgz-5t-Mg2"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Q5p-u3-mJI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6066.666666666667" y="101.78571428571428"/>
+        </scene>
+        <!--封面Navigation-->
+        <scene sceneID="8qu-E2-4dV">
+            <objects>
+                <navigationController title="封面Navigation" automaticallyAdjustsScrollViewInsets="NO" id="Lvz-2b-Y6G" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="封面" image="Farvorite" selectedImage="FarvoriteSelected" id="y29-GN-dls"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" id="Wxr-eC-1Pw">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="yeA-GX-GIV"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PpJ-zC-hvp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2463.768115942029" y="101.78571428571428"/>
+        </scene>
+        <!--故事-->
+        <scene sceneID="gq8-tq-V9M">
+            <objects>
+                <viewController id="IAu-ml-NXO" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lkB-dw-Z0u">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Bloom" translatesAutoresizingMaskIntoConstraints="NO" id="Az9-dF-Q5X">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="DDe-Wd-VrP">
+                                <rect key="frame" x="20" y="394" width="374" height="419"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">       日本三毛別棕熊襲擊事件（さんけべつひぐまじけん）是一次發生在日本棕熊襲擊當地住民的事件。
+       發生於1915年（大正4年）12月9日 - 12月14日，地點位於北海道苫前郡苫前村（現稱苫前町）三毛別（現稱三渓）六線澤，棕熊共造成住民7人死亡、3名重傷，是日本史上有紀錄最嚴重的棕熊襲擊事件。</string>
+                                <color key="textColor" red="1" green="0.90642096009999995" blue="0.87634628349999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="40"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9eB-qk-fZG">
+                                <rect key="frame" x="0.0" y="88" width="414" height="298"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <connections>
+                                    <segue destination="XkV-EQ-Dax" kind="embed" id="QdU-pG-Fjc"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="EYY-AP-vaD"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="故事" id="nAk-2T-Y3O"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Hl-nv-eQ9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3371.0144927536235" y="784.82142857142856"/>
+        </scene>
+        <!--事件-->
+        <scene sceneID="lme-p8-Rxw">
+            <objects>
+                <tableViewController id="99v-s4-dVu" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="none" rowHeight="100" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="IT2-e2-que">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="725"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <sections>
+                            <tableViewSection id="8G1-uF-Z6I">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" id="Rea-Bo-cVA">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Rea-Bo-cVA" id="dX0-al-hXz">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QAW-WB-ScS">
+                                                    <rect key="frame" x="20" y="11" width="374" height="78"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                    <state key="normal" title="池田家騷動" backgroundImage="BloodYellow">
+                                                        <color key="titleColor" red="0.21960784310000001" green="0.01176470588" blue="0.023529411760000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </state>
+                                                    <connections>
+                                                        <segue destination="e6g-KI-IEn" kind="show" id="gQb-DA-dG6"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" id="xId-Wm-LPf">
+                                        <rect key="frame" x="0.0" y="100" width="414" height="100"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="xId-Wm-LPf" id="KaB-w0-3WL">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1mk-Lx-hnC">
+                                                    <rect key="frame" x="20" y="11" width="374" height="78"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                    <state key="normal" title="太田家悲劇" backgroundImage="BloodYellow">
+                                                        <color key="titleColor" red="0.21960784310000001" green="0.01176470588" blue="0.023529411760000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </state>
+                                                    <connections>
+                                                        <segue destination="liR-Xh-g40" kind="show" id="gfH-up-Z97"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" id="tqu-Bb-0IZ">
+                                        <rect key="frame" x="0.0" y="200" width="414" height="100"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="tqu-Bb-0IZ" id="Wk6-NG-b07">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dz9-MR-b2H">
+                                                    <rect key="frame" x="20" y="11" width="374" height="78"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                    <state key="normal" title="搜索" backgroundImage="BloodYellow">
+                                                        <color key="titleColor" red="0.21960784310000001" green="0.01176470588" blue="0.023529411760000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </state>
+                                                    <connections>
+                                                        <segue destination="DoS-JU-50G" kind="show" id="vsV-BB-580"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" id="cIk-dO-exf">
+                                        <rect key="frame" x="0.0" y="300" width="414" height="100"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="cIk-dO-exf" id="dly-ri-PRE">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7rG-ci-9Fs">
+                                                    <rect key="frame" x="20" y="11" width="374" height="78"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                    <state key="normal" title="太田家再襲" backgroundImage="BloodYellow">
+                                                        <color key="titleColor" red="0.21960784310000001" green="0.01176470588" blue="0.023529411760000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </state>
+                                                    <connections>
+                                                        <segue destination="ATz-lz-WME" kind="show" id="DG1-3y-TNC"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" id="US3-Fm-VO6">
+                                        <rect key="frame" x="0.0" y="400" width="414" height="100"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="US3-Fm-VO6" id="afb-3w-WTM">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ni2-JC-ZJy">
+                                                    <rect key="frame" x="20" y="11" width="374" height="78"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                    <state key="normal" title="明景家慘劇" backgroundImage="BloodYellow">
+                                                        <color key="titleColor" red="0.21960784310000001" green="0.01176470588" blue="0.023529411760000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </state>
+                                                    <connections>
+                                                        <segue destination="5JL-y6-GC0" kind="show" id="TtW-Jk-BX5"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" id="mdo-CC-0hq">
+                                        <rect key="frame" x="0.0" y="500" width="414" height="100"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="mdo-CC-0hq" id="k4b-3D-5Sn">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NC1-ZI-opN">
+                                                    <rect key="frame" x="20" y="11" width="374" height="78"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                    <state key="normal" title="報警" backgroundImage="BloodYellow">
+                                                        <color key="titleColor" red="0.21960784310000001" green="0.01176470588" blue="0.023529411760000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </state>
+                                                    <connections>
+                                                        <segue destination="GXy-eZ-fNP" kind="show" id="ThJ-UB-xbi"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" id="eHF-ds-VDe">
+                                        <rect key="frame" x="0.0" y="600" width="414" height="100"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="eHF-ds-VDe" id="8ZW-sw-gJJ">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A0n-5b-af4">
+                                                    <rect key="frame" x="20" y="11" width="374" height="78"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                    <state key="normal" title="獵熊討伐隊" backgroundImage="BloodYellow">
+                                                        <color key="titleColor" red="0.21960784310000001" green="0.01176470588" blue="0.023529411760000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </state>
+                                                    <connections>
+                                                        <segue destination="BpY-qa-ik6" kind="show" id="aIA-SQ-pmD"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" id="T3F-qu-LCG">
+                                        <rect key="frame" x="0.0" y="700" width="414" height="100"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="T3F-qu-LCG" id="kH7-K2-WGm">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="99.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g5M-ET-B04">
+                                                    <rect key="frame" x="20" y="11" width="374" height="78"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                    <state key="normal" title="派出軍隊" backgroundImage="BloodYellow">
+                                                        <color key="titleColor" red="0.21960784310000001" green="0.01176470588" blue="0.023529411760000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </state>
+                                                    <connections>
+                                                        <segue destination="BBq-VK-Vuk" kind="show" id="y4n-oh-HDi"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" id="Ef0-1E-jWl">
+                                        <rect key="frame" x="0.0" y="800" width="414" height="100"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Ef0-1E-jWl" id="Xrc-8C-JF4">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="99.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="moZ-Q8-hJA">
+                                                    <rect key="frame" x="20" y="11" width="374" height="78"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                    <state key="normal" title="擊殺" backgroundImage="BloodYellow">
+                                                        <color key="titleColor" red="0.21960784310000001" green="0.01176470588" blue="0.023529411760000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </state>
+                                                    <connections>
+                                                        <segue destination="nue-So-i4c" kind="show" id="7wS-xW-kX5"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" id="M1z-Y5-EHX">
+                                        <rect key="frame" x="0.0" y="900" width="414" height="100"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="M1z-Y5-EHX" id="Gb9-Bs-4iE">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="99.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MLX-Dl-L2z">
+                                                    <rect key="frame" x="20" y="11" width="374" height="78"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                    <state key="normal" title="解剖" backgroundImage="BloodYellow">
+                                                        <color key="titleColor" red="0.21960784310000001" green="0.01176470588" blue="0.023529411760000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </state>
+                                                    <connections>
+                                                        <segue destination="FUw-jF-dgy" kind="show" id="gAW-1H-kqB"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" id="vw5-ey-Quf">
+                                        <rect key="frame" x="0.0" y="1000" width="414" height="100"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="vw5-ey-Quf" id="3Kd-zW-dmg">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="99.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XAZ-oK-aXh">
+                                                    <rect key="frame" x="20" y="11" width="374" height="78"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                    <state key="normal" title="後續" backgroundImage="BloodYellow">
+                                                        <color key="titleColor" red="0.21960784310000001" green="0.01176470588" blue="0.023529411760000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </state>
+                                                    <connections>
+                                                        <segue destination="npf-4r-AN1" kind="show" id="dQh-bo-Cii"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="99v-s4-dVu" id="bxg-gw-BfD"/>
+                            <outlet property="delegate" destination="99v-s4-dVu" id="I4S-cm-3yF"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="事件" id="CHd-oE-jpp"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uOS-Ww-uBH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4219" y="1474"/>
+        </scene>
+        <!--事件Table-->
+        <scene sceneID="cf6-14-NDe">
+            <objects>
+                <viewController title="事件Table" id="6Gs-5F-AB5" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ci9-RZ-z5q">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Blood" translatesAutoresizingMaskIntoConstraints="NO" id="AGK-0A-Ndr">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3F0-9x-8Li">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <connections>
+                                    <segue destination="99v-s4-dVu" kind="embed" id="Efc-SO-lat"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="wE6-5h-nYW"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="事件" id="GuT-Lf-fji"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xkv-O0-fYX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3370" y="1474"/>
+        </scene>
+        <!--主畫面Tab-->
+        <scene sceneID="FU1-Ze-QaZ">
+            <objects>
+                <tabBarController title="主畫面Tab" automaticallyAdjustsScrollViewInsets="NO" id="SPH-bh-dHU" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleAspectFill" insetsLayoutMarginsFromSafeArea="NO" backgroundImage="BloodWhite" id="E6C-XY-7fO">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" red="0.5" green="0.07083237916" blue="0.00070692448939999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Lvz-2b-Y6G" kind="relationship" relationship="viewControllers" id="LDg-7k-Vxd"/>
+                        <segue destination="hyj-Mc-Xsn" kind="relationship" relationship="viewControllers" id="nfF-3W-9fi"/>
+                        <segue destination="ccW-eu-Piy" kind="relationship" relationship="viewControllers" id="19h-2p-OU1"/>
+                        <segue destination="iTi-PB-20M" kind="relationship" relationship="viewControllers" id="DCi-vN-CJ0"/>
+                        <segue destination="Hzz-he-muL" kind="relationship" relationship="viewControllers" id="NIm-yS-wYf"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9Xh-e6-fDI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1690" y="1866"/>
+        </scene>
+        <!--地點Navigation-->
+        <scene sceneID="bzd-D3-lFB">
+            <objects>
+                <navigationController title="地點Navigation" automaticallyAdjustsScrollViewInsets="NO" id="iTi-PB-20M" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="地點" image="Search" selectedImage="SearchSelected" id="wBz-T8-hKk"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" id="qCC-av-mow">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="1LA-Kg-cNC" kind="relationship" relationship="rootViewController" id="Zsp-98-umx"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SA9-MP-Dea" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4220" y="785"/>
+        </scene>
+        <!--相關影視Navigation-->
+        <scene sceneID="NRv-8O-Wgf">
+            <objects>
+                <navigationController title="相關影視Navigation" automaticallyAdjustsScrollViewInsets="NO" id="Hzz-he-muL" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="相關影視" image="Mark" selectedImage="MarkSelect" id="bKu-Xq-ecx"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" id="sKs-Gn-j4g">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="8iC-wB-ZbS" kind="relationship" relationship="rootViewController" id="eWK-j2-Iom"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rFE-TJ-Ulx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5130" y="102"/>
+        </scene>
+        <!--故事Navigation-->
+        <scene sceneID="gzq-7F-RQZ">
+            <objects>
+                <navigationController title="故事Navigation" automaticallyAdjustsScrollViewInsets="NO" id="hyj-Mc-Xsn" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="故事" image="History" selectedImage="HistorySelected" id="BZW-v8-g4h"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" id="C5p-ua-Hul">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="IAu-ml-NXO" kind="relationship" relationship="rootViewController" id="Itt-m0-ZPw"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ccd-Nb-7qk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2460.8695652173915" y="784.82142857142856"/>
+        </scene>
+        <!--太田家慘劇-->
+        <scene sceneID="QYj-52-Mpe">
+            <objects>
+                <viewController id="liR-Xh-g40" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vyW-Hs-8Sl">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="725"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="DeadFirst" translatesAutoresizingMaskIntoConstraints="NO" id="cFj-A7-IFX">
+                                <rect key="frame" x="0.0" y="85" width="414" height="728"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" canCancelContentTouches="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="9h9-wR-aGj">
+                                <rect key="frame" x="20" y="86" width="374" height="727"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">       1915年12月9日、寄宿於太田家的長工長松要吉（ながまつ ようきち、當時59歳）與家主太田三郎（おおた さぶろう、當時42歳）都出門務農，三郎妻子阿部 マユ（あべ まゆ、當時34歳）與因為雙親出遠門而被寄放在太田家的蓮見幹雄（はすみ みきお、當時6歳）2人留守家中，進行挑揀紅豆的工作。
+       同日中午，要吉返回太田家吃午餐，發現幹雄的屍體，死狀悽慘，同屋的阿部則是失蹤，屋內地面留有大量的血跡。被通知趕來的村人推測事件發生於上午10點半之後，認為阿部的遺體可能被棕熊帶走作為食物。</string>
+                                <color key="textColor" red="1" green="0.93415980669999998" blue="0.90300631890000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.5" green="0.070832379155534198" blue="0.00070692448940801178" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="N4J-v0-7x7"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="太田家慘劇" id="KSb-JE-dXg"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jio-wh-5ea" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3371" y="2155"/>
+        </scene>
+        <!--搜索-->
+        <scene sceneID="nkm-RZ-NRc">
+            <objects>
+                <viewController id="DoS-JU-50G" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Kzz-t1-LBK">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="725"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="StoryBackground" translatesAutoresizingMaskIntoConstraints="NO" id="hgk-RF-KLc">
+                                <rect key="frame" x="0.0" y="85" width="414" height="728"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="neb-3x-BbV">
+                                <rect key="frame" x="20" y="88" width="374" height="725"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">       太田家慘劇在三毛別地區引起了極大的震動，住在上游的齊藤石五郎讓家人往較下游的明景家避難後，帶領由男性村民組成的30人棕熊討伐隊伍開始追蹤棕熊的足跡，目標為擊殺棕熊並帶回阿部的遺體。
+       之後於森林遭遇棕熊，棕熊全身黒褐色，胸前有白斑，體型巨大。討伐隊伍以獵槍攻擊，棕熊受驚後逃離，搜索附近後發現阿部殘缺的遺體。
+       因為棕熊色毛分布形似日本佛教僧人所使用的袈裟，因此村民稱呼其為「袈裟懸け」。</string>
+                                <color key="textColor" red="0.21960784310000001" green="0.01176470588" blue="0.023529411760000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.5" green="0.07083237916" blue="0.00070692448939999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="f32-t1-5Ps"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="搜索" id="NHX-AX-8Zh"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qrx-q0-sFq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4220" y="2155"/>
+        </scene>
+        <!--太田家再襲-->
+        <scene sceneID="dIE-Ij-jI4">
+            <objects>
+                <viewController id="ATz-lz-WME" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gic-fM-Pch">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="725"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="StoryBackground" translatesAutoresizingMaskIntoConstraints="NO" id="Zgi-ef-Iz4">
+                                <rect key="frame" x="0.0" y="85" width="414" height="728"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="WHf-3b-OJk">
+                                <rect key="frame" x="20" y="88" width="374" height="725"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">       當天晚上，幹雄雙親、太田三郎等9人舉行通夜儀式。晚上8點30分左右、棕熊闖入太田家，在場人員紛紛逃走，無人傷亡。
+       守靈的村民當下以鐵罐、獵槍反擊，附近的居民則以器具敲打發出巨大的噪音試圖嚇退棕熊，棕熊受到攻擊後朝下游明景家方向逃逸。</string>
+                                <color key="textColor" red="0.21960784310000001" green="0.01176470588" blue="0.023529411760000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.5" green="0.07083237916" blue="0.00070692448939999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="DIw-KV-POf"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="太田家再襲" id="20E-su-ns7"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fmu-RD-too" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5130" y="2155"/>
+        </scene>
+        <!--明景家慘劇-->
+        <scene sceneID="yE0-9b-CzQ">
+            <objects>
+                <viewController id="5JL-y6-GC0" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fQX-vi-so5">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="725"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="DeadSecond" translatesAutoresizingMaskIntoConstraints="NO" id="NEI-LQ-nCf">
+                                <rect key="frame" x="0.0" y="85" width="414" height="728"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="teC-wa-ia9">
+                                <rect key="frame" x="20" y="88" width="374" height="725"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">       明景家當時有明景安太郎的妻子ヤヨ（當時34歳）、長男力蔵（りきぞう、當時10歳）、次男勇次郎（ゆうじろう、當時8歳）、長女ヒサノ（當時6歳）、三男金蔵（きんぞう、當時3歳）、四男梅吉（うめきち、當時1歳）等6人、齊藤懷孕的妻子タケ與孩子巌、春義等3人、加上要吉共有10人在明景家避難。
+       8時50分左右，棕熊闖入明景家，打翻火堆，屋裡一片黑暗。ヤヨ馬上逃出屋外，卻因為要轉回去救嚇到腳軟的次子勇次郎而折返，背在背後四子梅吉遭到棕熊攻擊啃咬，棕熊之後追趕躲藏起來的要吉，要吉被抓中腰部，悲鳴引起棕熊憤怒，ヤヨ、勇次郎與梅吉趁隙逃出屋外。之後棕熊開始攻擊因為無法視物而被困在屋內的人，殺死了金蔵、春義、タケ。
+       追著棕熊而來村民趕到明景家，從重傷的ヤヨ與孩子口中得知棕熊襲擊。村民認為屋內無人倖免，應該要放火燒屋，卻因為ヤヨ堅持屋內有倖存者而兩方僵持不下，期間，重傷的要吉趁隙從屋內逃出。最後村民決定分成兩隊使用兩面夾攻方式，在屋子的前門遭遇棕熊，卻在混亂中讓棕熊逃脫。之後村民於屋內發現生還的力蔵、ヒサノ、巌。
+       棕熊逃脫後，六線澤全部居民前往三毛別分教場避難，重傷者送往下游3公里處的辻家收容，當晚，重傷的嚴在得知母親慘死後不久便傷重不治。重傷者於隔日移往更下流的住家、12日送進古丹別沢谷醫院救治。
+截至此時，「袈裟懸け」已經在兩日內殺死了六人，重傷三人。</string>
+                                <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.5" green="0.07083237916" blue="0.00070692448939999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="Yr7-AZ-cbN"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="明景家慘劇" id="AsH-UE-wYx"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="knH-St-3BU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6068" y="2155"/>
+        </scene>
+        <!--報警-->
+        <scene sceneID="5XT-T0-YQU">
+            <objects>
+                <viewController id="GXy-eZ-fNP" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="exg-Wl-Nwg">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="725"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="StoryBackground" translatesAutoresizingMaskIntoConstraints="NO" id="LhH-TJ-LSt">
+                                <rect key="frame" x="0.0" y="85" width="414" height="728"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Nhf-Te-AMw">
+                                <rect key="frame" x="20" y="88" width="374" height="725"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">       三毛別地區區長大川與三吉（おおかわよさきち，當時47歳）、村中長老有志、駐在所巡査、御料局分擔區員、分教場教師商量後、決議由警察出面射殺棕熊。
+       另一方面，在明景家慘劇發生時因為前往政府機關報告太田家事件而外宿1晚的齊藤石五郎，在11日回到三毛別，從下游村人口中得知全家皆死於棕熊掌下，倒伏在雪地上痛哭不已。</string>
+                                <color key="textColor" red="0.21960784310000001" green="0.01176470588" blue="0.023529411760000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.5" green="0.07083237916" blue="0.00070692448939999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="rYu-aX-bsI"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="報警" id="9Hi-jT-24b"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0Yo-Hy-Ea2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2464" y="2806"/>
+        </scene>
+        <!--解剖-->
+        <scene sceneID="bxw-k0-QlT">
+            <objects>
+                <viewController id="FUw-jF-dgy" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3BH-mW-Q9f">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="725"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="StoryBackground" translatesAutoresizingMaskIntoConstraints="NO" id="TyH-Sg-zWr">
+                                <rect key="frame" x="0.0" y="85" width="414" height="728"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="aZR-Vq-ntB">
+                                <rect key="frame" x="20" y="88" width="374" height="725"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">       經過解剖後，在棕熊的胃部發現許多人體殘肢，並發現一些與此次事件無關的物品，證明此熊與之前的幾起熊殺人事件有關。
+       獸醫推論棕熊「袈裟懸け」高270公分、重380公斤，推定7 - 8歳，頭部異常巨大。
+       為了撫慰亡者的在天之靈，村民將「袈裟懸け」分切煮食，熊肉極硬又多筋，味道並不好吃。熊肝與一些零碎內臟以50圓賣掉，錢分給了參與討伐的所有隊員(在當時，50圓約等於國小教師1個月的薪資)。熊的毛皮與頭骨等部分則是下落不明。</string>
+                                <color key="textColor" red="0.21960784310000001" green="0.01176470588" blue="0.023529411760000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.5" green="0.07083237916" blue="0.00070692448939999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="JWk-S7-DYr"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="解剖" id="Y72-JJ-8zr"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="X69-G7-Nua" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6068" y="2806"/>
+        </scene>
+        <!--獵熊討伐隊-->
+        <scene sceneID="Jd3-Dk-W8J">
+            <objects>
+                <viewController id="BpY-qa-ik6" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="K8G-Yw-OmD">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="725"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="StoryBackground" translatesAutoresizingMaskIntoConstraints="NO" id="KmA-ii-8mp">
+                                <rect key="frame" x="0.0" y="85" width="414" height="728"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Bgo-tk-FES">
+                                <rect key="frame" x="20" y="88" width="374" height="725"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">       警察方面由北海道廳警察部保安課羽幌分署長菅貢出面組織獵熊討伐隊，先期調查的獸醫師於山道上發現棕熊糞便、內含人骨、人類體毛、未消化的人肉，證實棕熊還在附近。
+       討伐隊爬上明景家的橫樑，6名獵熊人員手持獵槍在橫樑上待命。明景家因為必須引誘棕熊而沒有清掃或善後，殘缺的屍體發出惡臭。
+       當晚，熊從森林出現，在明景家門口停了下來，爾後，頭也不回地離開，當晚再也沒有回來，作戰失敗。</string>
+                                <color key="textColor" red="0.21960784310000001" green="0.01176470588" blue="0.023529411760000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.5" green="0.07083237916" blue="0.00070692448939999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="h3z-dM-Mq2"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="獵熊討伐隊" id="xM1-yj-1SS"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Bbs-KO-uAF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3371" y="2806"/>
+        </scene>
+        <!--派出軍隊-->
+        <scene sceneID="2WO-La-amF">
+            <objects>
+                <viewController id="BBq-VK-Vuk" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="25o-IM-mzO">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="725"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="StoryBackground" translatesAutoresizingMaskIntoConstraints="NO" id="hce-Zk-cM4">
+                                <rect key="frame" x="0.0" y="85" width="414" height="728"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="iQW-Wh-T6l">
+                                <rect key="frame" x="20" y="88" width="374" height="725"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">       感覺到事態越來越嚴重，軍方開始出動，調動旭川陸軍第7師団歩兵第28連隊投入獵殺棕熊作戰，調撥30名士兵支援討伐隊。
+       同日，棕熊再度闖入太田家，殺死雞隻。棕熊趁所有村民都集中避難的時候闖進屋子裡面，並且把每家的冬季存糧都吃光。這隻棕熊對女性使用過的枕頭、代替湯婆的石頭有異常的執著。
+       六線澤為了方便支援三毛別，特地修補壞掉的橋，並在橋上部屬槍手。當天晚上，橋上的一個槍手發現橋附近的河岸上有個影子在移動，菅貢出聲叫喚，卻沒有聽到任何回應，之後菅貢下令槍手開火，影子受攻擊後迅速地逃進森林內。</string>
+                                <color key="textColor" red="0.21960784310000001" green="0.01176470588" blue="0.023529411760000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.5" green="0.07083237916" blue="0.00070692448939999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="DzF-Oy-Slw"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="派出軍隊" id="wVj-vu-fTj"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="w2W-ZW-NbI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4220" y="2806"/>
+        </scene>
+        <!--擊殺-->
+        <scene sceneID="aSY-Zx-IVl">
+            <objects>
+                <viewController id="nue-So-i4c" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nKF-P6-YHG">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="725"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="StoryBackground" translatesAutoresizingMaskIntoConstraints="NO" id="kDU-RD-pcZ">
+                                <rect key="frame" x="0.0" y="85" width="414" height="728"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="sGv-fv-Awj">
+                                <rect key="frame" x="20" y="88" width="374" height="725"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">       討伐隊發現棕熊的腳印和血跡，判斷棕熊已經中槍，但因開始下雪，討伐隊決定盡早出發追蹤以免讓雪覆蓋任何線索。
+       此時趕到的著名獵熊人山本兵吉認為討伐隊太過吸引注意，因此刻意由其他方向進山，後在一棵白橡樹邊發現棕熊。棕熊因為太過注意討伐隊那邊的動靜而沒有查覺到兵吉，兵吉接近到棕熊二十公尺內，對準心臟射出第一槍，第二槍也俐落地射中棕熊頭部，結束了棕熊的性命。上午10點左右，聽到槍聲的討伐隊趕到現場。
+       此時討伐隊成員已經經將近600人、持有60支以上的槍枝、獵犬近10匹，在當時是前所未有的大型事件。</string>
+                                <color key="textColor" red="0.21960784310000001" green="0.01176470588" blue="0.023529411760000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.5" green="0.07083237916" blue="0.00070692448939999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="bbZ-f3-517"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="擊殺" id="40i-n5-HhG"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="psZ-Ab-bue" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5129" y="2806"/>
+        </scene>
+        <!--後續-->
+        <scene sceneID="Hk5-hg-0Nx">
+            <objects>
+                <viewController id="npf-4r-AN1" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Cwa-n4-bYF">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="725"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Last" translatesAutoresizingMaskIntoConstraints="NO" id="OlE-Oe-Jm1">
+                                <rect key="frame" x="0.0" y="85" width="414" height="728"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="FWQ-cW-jWK">
+                                <rect key="frame" x="20" y="88" width="374" height="725"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">       頭部受傷的ヤヨ逐漸恢復，但是遭到棕熊啃咬的明景梅吉因後遺症於2年8月後死亡。明景勇次郎順利成長，27年後在太平洋戰爭中戰死。長松要吉的傷勢順利恢復，但是不幸於隔年春天意外墜河死亡。家人皆亡的太田三郎放火燒了家屋，移居羽幌，後又移居青森，搬到青森不久後辭世。
+       殺死棕熊的山本兵吉在之後仍繼續投入獵熊行業，直到1950年以92歲高齡辭世為止，其孫在整理遺物後估計，山本兵吉在獵熊生涯裡至少射殺了300頭以上的熊。區長大川與三吉之子大川春義（おおかわ はるよし、當時7歳），因為受到此事件的刺激而立志成為獵熊人，在其62年獵熊生涯中射殺了102頭熊。</string>
+                                <color key="textColor" red="0.1035346519" green="0.0046362558030000004" blue="0.011372282710000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.5" green="0.07083237916" blue="0.00070692448939999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="3gh-fE-auw"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="後續" id="VJs-8f-pjo"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Pp1-ek-fL9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5128" y="1474"/>
+        </scene>
+        <!--事件圖片-->
+        <scene sceneID="01I-XO-8ru">
+            <objects>
+                <viewController title="事件圖片" id="XkV-EQ-Dax" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="c8Y-m0-jFR">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="298"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bear" translatesAutoresizingMaskIntoConstraints="NO" id="HY5-qL-Hge">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="298"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Q9V-DD-3fF"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Knq-Du-wXy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4217" y="275"/>
+        </scene>
+        <!--事件-->
+        <scene sceneID="hgY-1Q-8YQ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ccW-eu-Piy" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="事件" image="Template" selectedImage="TemplateSelected" id="pJJ-ti-NlI"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" id="Var-Fj-zQ2">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="6Gs-5F-AB5" kind="relationship" relationship="rootViewController" id="kWu-rN-xQm"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vus-xM-cEh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2461" y="1474"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="BearBackground" width="512" height="341"/>
+        <image name="Blood" width="250" height="250"/>
+        <image name="BloodTree" width="137" height="91"/>
+        <image name="BloodWhite" width="150" height="84"/>
+        <image name="BloodYellow" width="650" height="454"/>
+        <image name="Bloom" width="500" height="500"/>
+        <image name="Button" width="1200" height="485"/>
+        <image name="Comic" width="623" height="874"/>
+        <image name="DeadFirst" width="180" height="180"/>
+        <image name="DeadSecond" width="313" height="313"/>
+        <image name="Farvorite" width="27" height="26"/>
+        <image name="FarvoriteSelected" width="27" height="26"/>
+        <image name="History" width="25" height="25"/>
+        <image name="HistorySelected" width="25" height="25"/>
+        <image name="Last" width="225" height="300"/>
+        <image name="Location1" width="320" height="240"/>
+        <image name="Location2" width="225" height="300"/>
+        <image name="Location3" width="320" height="240"/>
+        <image name="Location4" width="290" height="217"/>
+        <image name="Location5" width="240" height="180"/>
+        <image name="Location6" width="129" height="97"/>
+        <image name="Location7" width="290" height="217"/>
+        <image name="Mark" width="27" height="24"/>
+        <image name="MarkSelect" width="27" height="24"/>
+        <image name="Novel" width="344" height="501"/>
+        <image name="Search" width="25" height="25"/>
+        <image name="SearchSelected" width="25" height="25"/>
+        <image name="StoryBackground" width="307" height="307"/>
+        <image name="Template" width="23" height="23"/>
+        <image name="TemplateSelected" width="23" height="23"/>
+        <image name="Title" width="400" height="280"/>
+        <image name="bear" width="300" height="201"/>
+    </resources>
 </document>
